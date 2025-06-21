@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Central - Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Biblioteca Central</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container contact-page">
+        <h1>Fale Conosco</h1>
+        <p>Preencha o formulário abaixo para entrar em contato com a Biblioteca Central. Responderemos o mais breve possível!</p>
+
+        <form id="contactForm" class="contact-form">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <div class="error-message" id="nameError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="error-message" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Assunto:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Selecione um motivo...</option>
+                    <option value="elogio">Elogio</option>
+                    <option value="critica">Crítica</option>
+                    <option value="sugestao">Sugestão</option>
+                    <option value="duvida">Dúvida</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <div class="error-message" id="subjectError"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <div class="error-message" id="messageError"></div>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Mensagem</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>BIBLIOTECA ALFA </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>

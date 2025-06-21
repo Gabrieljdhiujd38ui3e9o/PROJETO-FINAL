@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Central - Livros</title>
+    <link rel="stylesheet" href="estilo.css">
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">Biblioteca Central</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="livros.html">Livros</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Nosso Catálogo de Livros</h1>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Pesquisar por título...">
+            <button id="searchButton">Pesquisar</button>
+        </div>
+        <div id="searchMessage" class="search-message"></div>
+
+        <div class="book-list-container" id="bookListContainer">
+            <div class="book-card" data-title="A SUTIL ARTE DE LIGAR O FODA-SE">
+                <a href="detalhes-asutil-arte-de-ligar-o-foda-se.html">
+                    <img src="6175IU0qFgL._SY466_.jpg" alt="A SUTIL ARTE DE LIGAR O F*DA-SE">
+                    <h3>A SUTIL ARTE DE LIGAR O F*DA-SE</h3>
+                    <p class="book-author">Mark Manson</p>
+                    <p class="book-categoria">Auto ajuda</p>
+                    <button class="btn-detalhe">Saiba Mais</button>
+                </a>
+            </div>
+
+            <div class="book-card" data-title="1984">
+                <a href="detalhes-1984.html">
+                    <img src="1984.jpg" alt="Capa 1984">
+                    <h3>1984</h3>
+                    <p class="book-autor">George Orwell</p>
+                    <p class="book-categoria">Romance</p>
+                    <button class="btn-detalhe">Saiba Mais</button>
+                </a>
+            </div>
+
+            <div class="book-card" data-title="O ego é seu inimigo">
+                <a href="detalhes-o-ego.html">
+                    <img src="o ego.jpg" alt="">
+                    <h3>O EGO É SEU INIMIGO</h3>
+                    <p class="book-autor">Ryan Holiday</p>
+                    <p class="book-categoria">Auto Ajuda</p>
+                    <button class="btn-detalhe">Saiba Mais</button>
+                </a>
+            </div>
+
+            <div class="book-card" data-title="Fahrenheit 451">
+                <a href="detalhe-Fahrenheit-451.html">
+                    <img src="Fahrenheit 451.jpg" alt="">
+                    <h3>FAHRENHEIT 451</h3>
+                    <p class="book-autor">Ray Bradbury</p>
+                    <p class="book-categoria">Ficção Científica </p>
+                    <button class="btn-detalhe">Saiba Mais</button>
+                </a>
+            </div>
+
+            <div class="book-card" data-title="o espreitador">
+                <a href="detalhes-oespreitador.html">
+                    <img src="o espreitador.jpg" alt="">
+                    <h3>O ESPREITADOR E OUTRAS HISTÓRIAS </h3>
+                    <p class="book-autor">Ray Bradbury</p>
+                    <p class="book-categoria">Conto</p>
+                    <button class="btn-detalhe">Saiba Mais</button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>BIBLIOTECA ALFA</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+</html>
